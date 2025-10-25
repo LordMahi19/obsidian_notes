@@ -1,0 +1,1 @@
+third person singular form of [[tuntea]]. it means knows, feels

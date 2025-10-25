@@ -1,0 +1,1 @@
+this is partitive singular form of [[näkö]]. partitive case means "some" of something. here it means regarding vision or concerning vision. 

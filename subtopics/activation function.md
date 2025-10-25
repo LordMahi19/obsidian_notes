@@ -1,0 +1,5 @@
+[[sigmoid function]]
+[[ReLU]]
+[[tanh]]
+[[leaky relu]]
+[[softmax]]

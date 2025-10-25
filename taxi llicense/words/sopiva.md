@@ -1,0 +1,3 @@
+suitable
+appropriate
+fit

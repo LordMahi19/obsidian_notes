@@ -1,0 +1,3 @@
+excellent 
+outstanding 
+smart

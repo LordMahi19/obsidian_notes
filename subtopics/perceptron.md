@@ -1,0 +1,1 @@
+its the simplest form of an artificial neural network. 

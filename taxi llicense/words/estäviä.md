@@ -1,0 +1,4 @@
+preventing
+hindering
+
+[[estävä]]

@@ -1,0 +1,3 @@
+limitation
+restriction
+disability

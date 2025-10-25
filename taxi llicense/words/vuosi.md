@@ -1,0 +1,4 @@
+year (noun)
+
+[[vuotta]]
+[[vuoden]]

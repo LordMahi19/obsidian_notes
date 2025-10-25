@@ -1,0 +1,1 @@
+combined form of [[vahin]]. written like this when combined with other words.

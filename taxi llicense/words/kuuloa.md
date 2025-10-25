@@ -1,0 +1,1 @@
+this is partitive singular form of [[kuulo]]. similar to [[naköa]]. here it means regarding hearing. 

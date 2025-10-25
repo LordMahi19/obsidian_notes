@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"e7b2f165601ea453","type":"text","text":"would you tell us a bit more about yourself. for example who you are and what do you do now.","x":-137,"y":-256,"width":357,"height":96},
+		{"id":"07a848a4b5cbde91","type":"text","text":"could you tell us a bit more about your restaurant industry experience. for example what kind of jobs you have been doing and what kind of restaurants. ","x":-137,"y":-140,"width":357,"height":120},
+		{"id":"035b66b1ac17e903","type":"text","text":"tell us in more detail what kind of job you are looking for now. ","x":-137,"y":0,"width":357,"height":80},
+		{"id":"a933e8a72088fc64","type":"text","text":"Hello, my name is Md Mahi Al Jubair Talukder. Everybody calls me Mahi. I’m an international student and I came to Finland in August 2022, and I’ve really enjoyed my time here so far. I appreciate the Finnish work ethic and the strong work-life balance that the culture promotes. I graduated from my bachelors degree last month, and now I’m looking for opportunities to gain more hands-on experience. Currently I am working as a gig worker for bolt. I go to different restaurants mainly for salatti preparation and dishwashing roles. I’m excited to continue learning and contributing in a professional environment.","x":420,"y":-540,"width":782,"height":240},
+		{"id":"aded6b0d9dc5ff1d","type":"text","text":"I’ve been working in the restaurant industry for about three years now, and I’ve had the chance to experience different roles. Through Bolt, I worked in several restaurants like Food & Co, Compass group restaurants, Tommi’s Kitchen, and Restel Ravintola, as well as school and paivakoti in uusimaa region. My main tasks were helping with food preparation like making salatti and breakfast, keeping everything clean, and supporting the team during busy lunch hours. One of main duty was to manage the dishwasher and sorting clean items back to its correct place. \n\nI also worked with Compass Group Finland Oy, which is one of the biggest restaurant chains. There, I prepared 5–8 types of salads every day for 500 to 1,000 customers and managed dishwashing during peak times. These experiences taught me how to work under pressure, follow hygiene standards, and adapt quickly to different teams and environments.","x":420,"y":-214,"width":798,"height":294},
+		{"id":"50347c06b1cf72ad","type":"text","text":"Right now, I’m looking for a role where I can keep learning and gaining practical experience in the restaurant industry. I really enjoy working in the kitchen, so food preparation or kitchen assistant roles would be a great fit for me. I’m open to both part-time and full-time work, and I’m flexible with shifts, including evenings and weekends.\n\nMy goal is to keep improving my skills by working in real environments, because I believe the best way to learn is by doing. I want to be part of a team where I can contribute, grow, and take on new challenges.","x":420,"y":160,"width":798,"height":200},
+		{"id":"ecbe69c924b99e38","x":1400,"y":-370,"width":400,"height":580,"type":"file","file":"Mahi_Talukder_CV.pdf"}
+	],
+	"edges":[
+		{"id":"f1915e6132e19d11","fromNode":"e7b2f165601ea453","fromSide":"right","toNode":"a933e8a72088fc64","toSide":"left"},
+		{"id":"f406768fd60d9129","fromNode":"07a848a4b5cbde91","fromSide":"right","toNode":"aded6b0d9dc5ff1d","toSide":"left"},
+		{"id":"79ce1c8a7d2c045b","fromNode":"035b66b1ac17e903","fromSide":"right","toNode":"50347c06b1cf72ad","toSide":"left"},
+		{"id":"654761623358289d","fromNode":"a933e8a72088fc64","fromSide":"right","toNode":"ecbe69c924b99e38","toSide":"left"},
+		{"id":"ae320611ccbd4d3e","fromNode":"aded6b0d9dc5ff1d","fromSide":"right","toNode":"ecbe69c924b99e38","toSide":"left"},
+		{"id":"bff8f895660f76a7","fromNode":"50347c06b1cf72ad","fromSide":"right","toNode":"ecbe69c924b99e38","toSide":"left"}
+	]
+}

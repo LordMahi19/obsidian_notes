@@ -1,0 +1,5 @@
+negligence
+carelessness
+
+base:
+[[piittaamattomuus]]

@@ -1,0 +1,4 @@
+minimum, least
+
+[[vaatimus]]
+[[vaatimukset]]

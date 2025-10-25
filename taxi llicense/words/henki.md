@@ -1,0 +1,4 @@
+life
+
+related word:
+[[Henkeen]]

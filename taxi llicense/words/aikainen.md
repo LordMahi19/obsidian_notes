@@ -1,0 +1,1 @@
+This suffix indicates something that is **of a certain time period**.

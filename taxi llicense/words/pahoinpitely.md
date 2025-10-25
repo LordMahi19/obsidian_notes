@@ -1,0 +1,4 @@
+assault
+
+related word:
+[[pahoinpitelytuomio]]

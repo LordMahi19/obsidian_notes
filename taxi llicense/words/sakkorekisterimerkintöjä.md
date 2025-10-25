@@ -1,0 +1,4 @@
+fine registry
+
+[[sakko]]
+[[rekisterimerkintä]]

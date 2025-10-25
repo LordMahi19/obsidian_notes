@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"3a67d010f4977b90","x":-460,"y":100,"width":681,"height":543,"color":"4","type":"text","text":"```python\nclass Value:\n\n    def __init__(self, data, _children=()):\n\n        self.data = data\n\n        self._prev = set(_children)\n\n    def __repr__(self):\n\n        return f\"Value(data={self.data})\"\n\n    def __add__(self, other):\n\n        out = Value(self.data + other.data, (self, other))\n\n        return out\n\n    def __mul__(self, other):\n\n        out = Value(self.data * other.data)\n\n        return out\n```"},
+		{"id":"abbb54105463da40","x":1066,"y":-580,"width":426,"height":180,"type":"text","text":"```\n__init__ is a special method in python class. whenever an instance is created this methon is called first. this is the constructor of the class. it defines the shape of the class.\n```"},
+		{"id":"a665ec94d73a9a81","x":1066,"y":-100,"width":426,"height":143,"type":"text","text":"```\n__repr__ is a special metod which defines how the instance will look lke when it is printed\n```"},
+		{"id":"4f3c2b4429a2c11b","x":1066,"y":219,"width":426,"height":281,"type":"text","text":"```\nhere when the addition is happening the result creates another Value() instance which is taking two parameters. the first parameter is the result of the two data addition and the other parameter is a tupple that has the two value instance that were used for addition. this later parameter is the _children tuple. \n```"},
+		{"id":"e12ac9f8b04aad90","x":-1120,"y":-180,"width":356,"height":122,"type":"text","text":"anything that starts with an underscore is means that this parameter is for internal use. it is protected."},
+		{"id":"b0462ce538d11de0","x":-1480,"y":100,"width":426,"height":174,"type":"text","text":"```\n__add___ __mul__ they all are special methods. using these methods we can define how addition and multiplication are performed between two instance of that object\n```"}
+	],
+	"edges":[
+		{"id":"84a90a5dafe075d8","fromNode":"3a67d010f4977b90","fromSide":"right","toNode":"abbb54105463da40","toSide":"left","color":"6","label":"__init__"},
+		{"id":"a112e8794df176ed","fromNode":"3a67d010f4977b90","fromSide":"right","toNode":"a665ec94d73a9a81","toSide":"left","color":"6","label":"__repr__"},
+		{"id":"146864a59a84839d","fromNode":"3a67d010f4977b90","fromSide":"right","toNode":"4f3c2b4429a2c11b","toSide":"left","color":"6","label":"__add__"},
+		{"id":"901ddd84b3394329","fromNode":"3a67d010f4977b90","fromSide":"left","toNode":"e12ac9f8b04aad90","toSide":"right","color":"3"},
+		{"id":"6277fb31be439a42","fromNode":"3a67d010f4977b90","fromSide":"left","toNode":"b0462ce538d11de0","toSide":"right","color":"3"}
+	]
+}

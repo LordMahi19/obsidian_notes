@@ -1,0 +1,4 @@
+validity
+
+base words:
+[[voimassa]]

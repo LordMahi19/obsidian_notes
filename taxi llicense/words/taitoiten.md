@@ -1,0 +1,1 @@
+skilled, talented, competent
