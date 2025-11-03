@@ -4,12 +4,14 @@
 		{"id":"7ca2508a428d48b8","type":"file","file":"Full stack development/CSS.md","x":-360,"y":-120,"width":400,"height":160,"color":"1"},
 		{"id":"79c3c130e313d0b8","type":"file","file":"Full stack development/JavaScript.md","x":-360,"y":100,"width":400,"height":160},
 		{"id":"3c8498e509ca78ff","type":"text","text":"5 hours 32 minutes","x":100,"y":-120,"width":180,"height":50},
-		{"id":"77b215d91e196dc7","type":"text","text":"color palete website:\nhttps://coolors.co/palettes/trending\n\n","x":308,"y":-89,"width":272,"height":89}
+		{"id":"77b215d91e196dc7","type":"text","text":"color palete website:\nhttps://coolors.co/palettes/trending\n\n","x":308,"y":-89,"width":272,"height":89},
+		{"id":"35fba44faf70d8ba","x":261,"y":152,"width":250,"height":60,"type":"text","text":"currently on 6 hours 43 minutes"}
 	],
 	"edges":[
 		{"id":"5feae3abd52a4bba","fromNode":"6f477c550053a0c9","fromSide":"bottom","toNode":"7ca2508a428d48b8","toSide":"top"},
 		{"id":"1874c2beb3551255","fromNode":"7ca2508a428d48b8","fromSide":"bottom","toNode":"79c3c130e313d0b8","toSide":"top"},
 		{"id":"97c145cba3644d06","fromNode":"7ca2508a428d48b8","fromSide":"right","toNode":"3c8498e509ca78ff","toSide":"left"},
-		{"id":"131ea49e76848c73","fromNode":"7ca2508a428d48b8","fromSide":"right","toNode":"77b215d91e196dc7","toSide":"left"}
+		{"id":"131ea49e76848c73","fromNode":"7ca2508a428d48b8","fromSide":"right","toNode":"77b215d91e196dc7","toSide":"left"},
+		{"id":"693f8932ebab73a4","fromNode":"79c3c130e313d0b8","fromSide":"right","toNode":"35fba44faf70d8ba","toSide":"left"}
 	]
 }
