@@ -1,4 +1,4 @@
-# chatgpt
+# plan 1
 
 1. **Clone repos**: v2e, ESIM/vid2e, and a template PyTorch action-recognition training repo. [GitHub+1](https://github.com/SensorsINI/v2e?utm_source=chatgpt.com)
     
@@ -11,7 +11,7 @@
 5. **Add one robustness test**: blur or darken RGB test set and re-evaluate.
 
 
-# gemini 1
+# plan 2
 
 The key is to shift from **static gesture classification** (which your `signlang` project does) to **dynamic action recognition** (which your thesis requires).
 
@@ -87,4 +87,31 @@ You should search for datasets like:
 
 Using one of these standard datasets will save you an immense amount of time in data collection and allow you to focus on the core of your thesis: implementing and comparing the models.
 
-# gemini 2
+# plan 3
+### Step 4: Pillar 2 - Event-Based Recognition (The Novel Work)
+
+Now, you will use the DVS128 dataset to implement the "neuromorphic" models.
+
+**Path A: Convolutional Architecture (Direct Comparison to Pillar 1, Path B)**
+
+1. **Data Loader:** Use `tonic` to create a PyTorch `DataLoader` for the DVS128 dataset.
+    
+2. **Transform:** Apply the `tonic.transforms.ToFrame` transform to convert the event streams into "event-frame videos." The resulting tensor will have a shape like `(Time, 2, 128, 128)`, where the 2 channels are for "on" (positive) and "off" (negative) events.
+    
+3. **Model:** Use the _exact same 3D-CNN architecture_ you built in `Pillar 1, Path B`.
+    
+4. **Training:** Train this model on the event-frames. You now have a perfect comparison: the _same model_ trained on _RGB data_ vs. _event-frame data_.
+    
+
+**Path B: Spiking-Inspired Model (as per your abstract)**
+
+1. **Data Loader:** Use `snnTorch`'s built-in data loader, which is optimized for SNNs (`snntorch.spikevision.spikedata.DVSGesture`). It will handle converting events into sparse spike tensors.
+    
+2. **Model:** Build a **Convolutional Spiking Neural Network (CSNN)**.
+    
+    - Follow the `snnTorch` gesture recognition tutorial, which uses this exact dataset.
+        
+    - The architecture will be a stack of `Conv2d` layers followed by `snnTorch.Leaky` (spiking) neurons and `MaxPool2d` layers, ending in a classifier. A documented architecture is `12C5-MP2–32C5-MP2–800FC11`.
+        
+3. **Training:** Train the SNN. This is the most novel part of your thesis and directly addresses the "spiking-inspired models" requirement.
+    
