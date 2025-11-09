@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "new_idea_thesis/GEMINI.md",
+                "file": "US admission/wisconsin.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GEMINI"
+              "title": "wisconsin"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,19 +185,26 @@
       "graph:Open graph view": false
     }
   },
-  "active": "cbedac0d075925db",
+  "active": "7f0a94e7f32585ba",
   "lastOpenFiles": [
-    "3d environment/GEMINI.md",
-    "3d environment/research_ideas.md",
-    "3d environment/session_summary.md",
+    "US admission/Untitled.base",
+    "US admission/wisconsin.md",
+    "US admission/missouri.md",
+    "US admission/iowa.md",
+    "US admission/indiana.md",
+    "US admission/illinois.md",
     "3d environment/thesis.md",
+    "3d environment/session_summary.md",
+    "3d environment/research_ideas.md",
+    "3d environment/GEMINI.md",
+    "US admission",
+    "new_idea_thesis/GEMINI.md",
     "thesis/thesis.md",
     "3d environment/desktop.ini",
     "3d environment",
     "email.md",
     "thesis/thesis mind map.canvas",
     "new_idea_thesis/test 1.md",
-    "new_idea_thesis/GEMINI.md",
     "thesis/GEMINI.md",
     "new_idea_thesis/execution.md",
     "Pasted image 20251105144531.png",
@@ -213,21 +221,13 @@
     "thesis/paper_summary.md",
     "thesis/professor email.md",
     "thesis/summary for professor.md",
-    "thesis/currently working on.md",
     "Pasted image 20251104054827.png",
     "thesis/links and papers/ALowPower, Fully Event-Based Gesture Recognition System.pdf",
     "thesis/links and papers/Event-based Vision A Survey.pdf",
     "thesis/links and papers/ESIM an Open Event Camera Simulator.pdf",
-    "thesis/links and papers/v2e From Video Frames to Realistic DVS Events.pdf",
-    "thesis/links and papers/DailyDVS-200 A Comprehensive Benchmark.pdf",
-    "thesis/links and papers/links.md",
     "thesis/notebooklm.canvas",
     "thesis/NotebookLM Mind Map.png",
-    "Full stack development/JavaScript.md",
-    "Full stack development/HTML.md",
     "Full stack development/Full stack roadmap.canvas",
-    "Full stack development/CSS.md",
-    "prompt.md",
     "thesis mind map.canvas",
     "notebooklm.canvas",
     "NotebookLM Mind Map.png",
