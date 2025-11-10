@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "US admission/university/University_of_Wisconsin_Stout.md",
+                "file": "3d environment/thesis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "University_of_Wisconsin_Stout"
+              "title": "thesis"
             }
           }
         ],
@@ -211,10 +211,11 @@
   },
   "active": "d9cb855e088f0145",
   "lastOpenFiles": [
+    "3d environment/research_ideas.md",
+    "US admission/university/University_of_Wisconsin_Stout.md",
     "US admission/states/wisconsin.md",
     "US admission/university/Indiana_University_Purdue_University_Indianapolis.md",
     "US admission/Database.md",
-    "US admission/university/University_of_Wisconsin_Stout.md",
     "US admission/university/University_of_Wisconsin_Milwaukee.md",
     "US admission/university/University_of_Wisconsin_Madison.md",
     "US admission/university/University_of_Northern_Iowa.md",
@@ -236,7 +237,6 @@
     "US admission/university/Indiana_State_University.md",
     "US admission/university/Governors_State_University.md",
     "US admission/university/Fort_Hays_State_University.md",
-    "US admission/university/Fitchburg_State_University.md",
     "US admission/states",
     "US admission/university",
     "US admission/desktop.ini",
