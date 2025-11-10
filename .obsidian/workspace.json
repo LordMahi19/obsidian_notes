@@ -4,35 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "f313c60f84c1bf38",
+        "id": "0a23f3d084500c7e",
         "type": "tabs",
         "children": [
           {
-            "id": "cbedac0d075925db",
+            "id": "f4fb953cf7bca41d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3d environment/session_summary.md",
+                "file": "US admission/university/Alcorn_State_University.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "session_summary"
+              "title": "Alcorn_State_University"
             }
           },
           {
-            "id": "0ee904cfedc6796b",
+            "id": "d9cb855e088f0145",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "US admission/wisconsin.md",
-                "mode": "preview",
-                "source": false
+                "file": "US admission/university/University_of_Wisconsin_Stout.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "wisconsin"
+              "title": "University_of_Wisconsin_Stout"
             }
           }
         ],
@@ -93,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 374.5
   },
   "right": {
     "id": "d2d860f1cc2e3a73",
@@ -182,50 +202,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "graph:Open graph view": false
+      "graph:Open graph view": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "audio-recorder:Start/stop recording": false,
+      "publish:Publish changes...": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0ee904cfedc6796b",
+  "active": "d9cb855e088f0145",
   "lastOpenFiles": [
+    "US admission/states/wisconsin.md",
+    "US admission/university/Indiana_University_Purdue_University_Indianapolis.md",
+    "US admission/Database.md",
+    "US admission/university/University_of_Wisconsin_Stout.md",
+    "US admission/university/University_of_Wisconsin_Milwaukee.md",
+    "US admission/university/University_of_Wisconsin_Madison.md",
+    "US admission/university/University_of_Northern_Iowa.md",
+    "US admission/university/University_of_Missouri.md",
+    "US admission/university/University_of_Illinois_Springfield.md",
+    "US admission/university/University_of_Central_Missouri.md",
+    "US admission/university/University_of_North_Dakota.md",
+    "US admission/university/University_of_Iowa.md",
+    "US admission/university/University_of_Illinois_Urbana_Champaign.md",
+    "US admission/university/University_of_Central_Arkansas.md",
+    "US admission/university/Southern_Illinois_University_Edwardsville.md",
+    "US admission/university/Northwest_Missouri_State_University.md",
+    "US admission/university/Northern_Illinois_University.md",
+    "US admission/university/Northeastern_Illinois_University.md",
+    "US admission/university/Missouri_State_University.md",
+    "US admission/university/Loyola_University_Chicago.md",
+    "US admission/university/Iowa_State_University.md",
+    "US admission/university/Indiana_University_Bloomington.md",
+    "US admission/university/Indiana_State_University.md",
+    "US admission/university/Governors_State_University.md",
+    "US admission/university/Fort_Hays_State_University.md",
+    "US admission/university/Fitchburg_State_University.md",
+    "US admission/states",
+    "US admission/university",
+    "US admission/desktop.ini",
+    "desktop.ini",
+    "Learning Map/ml/learning map.canvas",
+    "Learning Map/ml/karpathy.canvas",
     "network structure.canvas",
+    "US admission/visualisation.html",
+    "US admission/visualisatio.html",
+    "US admission/New Text Document.txt",
     "US admission/Untitled.base",
-    "US admission/wisconsin.md",
-    "US admission/missouri.md",
-    "US admission/iowa.md",
-    "US admission/indiana.md",
-    "US admission/illinois.md",
-    "3d environment/thesis.md",
-    "3d environment/session_summary.md",
-    "3d environment/research_ideas.md",
-    "3d environment/GEMINI.md",
     "US admission",
-    "new_idea_thesis/GEMINI.md",
-    "thesis/thesis.md",
     "3d environment/desktop.ini",
-    "3d environment",
-    "email.md",
     "thesis/thesis mind map.canvas",
-    "new_idea_thesis/test 1.md",
-    "thesis/GEMINI.md",
-    "new_idea_thesis/execution.md",
     "Pasted image 20251105144531.png",
-    "new_idea_thesis/project.md",
-    "new_idea_thesis/newidea.md",
-    "new_idea_thesis/export_and_infer.py",
-    "new_idea_thesis/model_def.py",
-    "Finnish Language/words/2025-11-05.md",
-    "new_idea_thesis",
-    "thesis/prompt for notebooklm.md",
-    "thesis/Code.md",
-    "thesis/chat.md",
-    "thesis/progress and plan.md",
-    "thesis/paper_summary.md",
-    "thesis/professor email.md",
-    "thesis/summary for professor.md",
     "Pasted image 20251104054827.png",
-    "thesis/links and papers/ALowPower, Fully Event-Based Gesture Recognition System.pdf",
-    "thesis/links and papers/Event-based Vision A Survey.pdf",
-    "thesis/links and papers/ESIM an Open Event Camera Simulator.pdf",
     "thesis/notebooklm.canvas",
     "thesis/NotebookLM Mind Map.png",
     "Full stack development/Full stack roadmap.canvas",
@@ -235,8 +262,6 @@
     "video interview staffpoint.canvas",
     "wolt internship/backend.canvas",
     "my_network_structure.svg",
-    "Learning Map/ml/learning map.canvas",
-    "Learning Map/ml/karpathy.canvas",
     "passport renew/suplement.png",
     "passport renew/Pasted image 20250207003954.png",
     "passport renew/Pasted image 20250207004110.png",

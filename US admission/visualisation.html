@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable CS Master's Guide (USA)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+                max-height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<!-- 
+Infographic Narrative Plan:
+1.  Hook/Title: "The U.S. Master's in CS: A Guide for International Students on a Budget."
+2.  Section 1: The $10k Challenge. A "Big Number" visualization comparing average In-State vs. Out-of-State (International) graduate tuition to inform about the real costs.
+3.  Section 2: Most Affordable Public Universities. A bar chart to compare the most affordable (but realistic) out-of-state tuition options.
+4.  Section 3: Key Factors Beyond Tuition. Donut chart for funding sources and text callouts for other financial factors (stipends, cost of living).
+5.  Section 4: The Path to Affordability. An HTML/Tailwind-based flowchart to organize the process of seeking funding (TA/RA-ships).
+
+Visualization Selections:
+1.  Data: Avg. In-State vs. Avg. International Tuition.
+    Goal: Inform.
+    Choice: "Big Number" callouts (HTML/Tailwind).
+    Justification: High-impact, simple, and direct. (NO SVG).
+2.  Data: Annual tuition at affordable universities.
+    Goal: Compare/Rank.
+    Choice: Horizontal Bar Chart (Chart.js).
+    Justification: Best for comparing values across a few categories and clearly reading labels. (NO SVG).
+3.  Data: Typical student funding sources (Mock Data).
+    Goal: Inform (Composition).
+    Choice: Donut Chart (Chart.js).
+    Justification: Clearly shows proportions of a whole. (NO SVG).
+4.  Data: Application process for funding.
+    Goal: Organize (Process).
+    Choice: Flow Chart (HTML/Tailwind).
+    Justification: Lays out sequential steps clearly using styled HTML elements. (NO SVG, NO MERMAID).
+
+Chosen Palette: Brilliant Blues (#004c99, #0066cc, #3399ff, #009999, #ff9933)
+
+Confirmed: NO SVG graphics or Mermaid JS were used. All charts are rendered via Chart.js on Canvas. All diagrams are built with HTML/Tailwind.
+-->
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-[#004c99] text-white p-8 shadow-lg">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">The U.S. Master's in CS: A Guide for International Students
+            </h1>
+            <p class="text-lg text-gray-200">Visualizing a path to an affordable, high-value degree.</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-[#004c99] mb-4">The $10k Tuition Challenge: In-State vs. International
+            </h2>
+            <p class="text-gray-700 mb-6">Your goal of ~$10,000/year is a common target, but it's vital to understand
+                the data. This figure typically represents *in-state* tuition for state residents. International
+                students are charged *out-of-state* or *international* rates, which are significantly higher. This
+                infographic visualizes the most affordable options based on those international rates.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-600 mb-2">Average Public University In-State</h3>
+                    <p class="text-5xl font-bold text-[#0066cc]">~$11,500</p>
+                    <p class="text-gray-500">Per Year (Graduate)</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-2 border-[#ff9933]">
+                    <h3 class="text-xl font-semibold text-gray-600 mb-2">Average Public University International</h3>
+                    <p class="text-5xl font-bold text-[#ff9933]">~$28,000+</p>
+                    <p class="text-gray-500">Per Year (Graduate)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-[#004c99] mb-4">Spotlight: Most Affordable CS Master's Programs</h2>
+            <p class="text-gray-700 mb-6">While sub-$10k is extremely rare, several universities offer high-quality
+                programs with international tuition well below the national average. This data represents estimated
+                2024-2025 *out-of-state/international* graduate tuition for CS-related programs. Always verify exact,
+                current figures on the university's official website.</p>
+            <div class="chart-container">
+                <canvas id="tuitionBarChart"></canvas>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-[#004c99] mb-4">Typical Funding Sources</h2>
+                <p class="text-gray-700 mb-6">Tuition is only part of the story. Many international students receive
+                    funding via Teaching (TA) or Research (RA) Assistantships, which often include a tuition waiver and
+                    a monthly stipend.</p>
+                <div class="chart-container" style="height: 300px; max-height: 350px;">
+                    <canvas id="fundingDonutChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold text-[#004c99] mb-4">Beyond Tuition: Key Financials</h2>
+                <p class="text-gray-700 mb-6">An assistantship can make a more expensive school cheaper than a
+                    low-tuition school. Furthermore, many affordable universities are in low cost-of-living (LCOL)
+                    areas, making your stipend go further.</p>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-600">Typical TA/RA Stipend</h3>
+                        <p class="text-3xl font-bold text-[#009999]">$1,000 - $2,000 / month</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-600">Benefit of LCOL States</h3>
+                        <p class="text-3xl font-bold text-[#009999]">Up to 30% Lower Costs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-[#004c99] mb-4">Your Path to an Affordable Degree</h2>
+            <p class="text-gray-700 mb-6">Securing funding is a proactive process. This flow shows the most common steps
+                to getting an assistantship.</p>
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="bg-[#e6f2ff] p-4 rounded-lg shadow text-center w-full md:w-1/4">
+                    <span class="text-2xl font-bold text-[#004c99]">1</span>
+                    <h3 class="font-semibold mt-2">Research Professors</h3>
+                    <p class="text-sm text-gray-600">Find 2-3 faculty in your research area.</p>
+                </div>
+                <div class="text-3xl text-[#0066cc] transform rotate-90 md:rotate-0 font-light">→</div>
+                <div class="bg-[#e6f2ff] p-4 rounded-lg shadow text-center w-full md:w-1/4">
+                    <span class="text-2xl font-bold text-[#004c99]">2</span>
+                    <h3 class="font-semibold mt-2">Email Faculty Early</h3>
+                    <p class="text-sm text-gray-600">Contact them 6-9 months before applying.</p>
+                </div>
+                <div class="text-3xl text-[#0066cc] transform rotate-90 md:rotate-0 font-light">→</div>
+                <div class="bg-[#e6f2ff] p-4 rounded-lg shadow text-center w-full md:w-1/4">
+                    <span class="text-2xl font-bold text-[#004c99]">3</span>
+                    <h3 class="font-semibold mt-2">Mention TA/RA in App</h3>
+                    <p class="text-sm text-gray-600">Check all boxes for funding consideration.</p>
+                </div>
+                <div class="text-3xl text-[#0066cc] transform rotate-90 md:rotate-0 font-light">→</div>
+                <div class="bg-[#009999] text-white p-4 rounded-lg shadow text-center w-full md:w-1/4">
+                    <span class="text-2xl font-bold">✓</span>
+                    <h3 class="font-semibold mt-2">Secure Funding</h3>
+                    <p class="text-sm text-gray-100">Receive offer with tuition waiver & stipend.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 text-gray-500 text-sm">
+        <p>This is a data visualization SPA. All data is illustrative and based on publicly available estimates for
+            2024-2025. Always confirm official tuition and funding details with university admissions. Links provided in
+            data are for reference.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+
+            const processLabel = (label) => {
+                const maxLength = 16;
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine) {
+                    lines.push(currentLine.trim());
+                }
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+
+            const createTuitionChart = () => {
+                const ctx = document.getElementById('tuitionBarChart').getContext('2d');
+
+                const labels = [
+                    'Dakota State University (SD)',
+                    'Arkansas State University (AR)',
+                    'South Dakota State University (SD)',
+                    'University of Wyoming (WY)',
+                    'New Mexico State University (NM)',
+                    'Mississippi State University (MS)'
+                ].map(processLabel);
+
+                const data = [12500, 12600, 12800, 15500, 18000, 25000];
+                const links = [
+                    'https://www.dsu.edu/',
+                    'https://www.astate.edu/',
+                    'https://www.sdstate.edu/',
+                    'https://www.uwyo.edu/',
+                    'https://www.nmsu.edu/',
+                    'https://www.msstate.edu/'
+                ];
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Est. Annual International Tuition (USD)',
+                            data: data,
+                            backgroundColor: '#009999',
+                            borderColor: '#0066cc',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Est. Annual Tuition (USD)'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        },
+                        onClick: (e) => {
+                            const activePoints = e.chart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                            if (activePoints.length > 0) {
+                                const index = activePoints[0].index;
+                                window.open(links[index], '_blank');
+                            }
+                        },
+                        onHover: (e) => {
+                            const activePoints = e.chart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+                            e.native.target.style.cursor = activePoints.length ? 'pointer' : 'default';
+                        }
+                    }
+                });
+            };
+
+            const createFundingChart = () => {
+                const ctx = document.getElementById('fundingDonutChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['TA/RA Funding', 'Scholarships', 'Self-Funded'],
+                        datasets: [{
+                            data: [30, 20, 50],
+                            backgroundColor: [
+                                '#009999',
+                                '#3399ff',
+                                '#ff9933'
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            };
+
+            createTuitionChart();
+            createFundingChart();
+        });
+    </script>
+</body>
+
+</html>
