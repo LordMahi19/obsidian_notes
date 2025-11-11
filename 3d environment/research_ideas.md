@@ -1,55 +1,22 @@
-## Bachelor Thesis Research Idea: 3D Reconstruction from Video
+# Bachelor Thesis Research Idea: The Journey to a Real-time Robotic Perception System
 
-**Core Idea:** Investigate whether camera vision alone is sufficient to create an accurate 3D representation of surroundings, particularly useful for robotic perception and mapping.
+## The High-Level Vision
+The starting point was a powerful, high-level concept: in order to effectively train robots, we often use detailed 3D simulators or "digital twins." A robot trained in such a world could navigate the real world more effectively if it could create its own, simplified version of a digital twin in real-time.
 
-**Key Concepts & Terminology:**
-*   **Structure from Motion (SfM):** Reconstructing 3D structures from 2D image sequences.
-*   **Simultaneous Localization and Mapping (SLAM):** Simultaneously building a map of an unknown environment and localizing the agent within it.
-*   **Monocular SLAM:** SLAM specifically using a single camera.
+## The Core Problem
+This reframed the thesis goal. The objective was not to create a high-fidelity, offline 3D model for viewing. Instead, the core problem is: **How can a robot with a single camera perceive the world and build a simple, geometric map in real-time for the purpose of navigation?**
 
-**Core Challenge:**
-*   **Scale Ambiguity:** A single camera can recover 3D structure and motion, but only up to an unknown scale. Research could focus on methods to resolve this.
+## Exploring and Discarding Alternatives
+*   **Path 1: High-Fidelity Reconstruction (NeRFs/Offline SfM):** Initial thoughts centered on creating detailed 3D models. However, these methods are computationally expensive and slow (offline), making them unsuitable for a robot that needs to react instantly. They also provide a level of photorealistic detail that is unnecessary for simple path planning.
+*   **Path 2: Building a Basic System from Scratch (Classical SfM):** This was closer, as it focused on fundamentals. However, a classical SfM pipeline is still designed for offline use and produces a point cloud, not the simplified, object-oriented map needed for the "digital twin" navigation concept.
 
-**Potential Research Questions/Directions:**
-1.  **Accuracy vs. Computational Cost:** Compare different feature detectors (e.g., SIFT, ORB, deep learning features) and their impact on 3D reconstruction accuracy and real-time performance.
-2.  **Handling Dynamic Environments:** Address the challenge of building stable 3D maps in environments with moving objects.
-3.  **Deep Learning Approaches:** Explore the use of end-to-end deep learning models (e.g., Neural Radiance Fields - NeRFs) for potentially more accurate or dense 3D representations.
-4.  **Sensor Fusion (Comparison):** Compare monocular camera results with systems that fuse camera data with an IMU (Visual-Inertial Odometry) to highlight the unique challenges and capabilities of camera-only systems.
+## The Final Decision: A Real-time, Semantic, 2.5D Map
+The final, clarified project combines the most important constraints: **real-time performance** and **semantic understanding** (knowing what an object is).
 
-**Suggested Starting Point:**
-*   Implement a basic SfM pipeline using libraries like OpenCV:
-    *   Feature Detection and Matching
-    *   Camera Pose Estimation
-    *   3D Point Triangulation
+**Project Title:** "Real-time 2.5D Scene Representation using Visual Odometry and Object Detection for Robotic Navigation"
 
-**Keywords for Literature Review:**
-*   "Monocular SLAM"
-*   "Structure from Motion"
-*   "Visual Odometry"
-*   "Neural Radiance Fields (NeRF)"
-*   "3D reconstruction from video"
+**Rationale:** This project directly tackles the core problem by building a prototype that does two things simultaneously:
+1.  **Tracks its own motion** using a lightweight **Visual Odometry** algorithm.
+2.  **Identifies important objects** using a pre-trained, real-time **Object Detector** (like YOLO).
 
-A Potential Thesis Project:
-
-  A great project would be to "Investigate the Suitability of NeRF-based Models for Robotic Perception."
-
-  Here's a possible plan:
-
-   1. Literature Review: Focus on NeRFs and their variants (e.g., Instant-NGP for speed, Block-NeRF for large
-      scenes).
-   2. Implementation:
-       * Start with an existing, popular NeRF implementation like Instant-NGP from NVIDIA. It's incredibly fast
-         and well-documented.
-       * Train it on a standard dataset (like the original NeRF dataset) to understand how it works.
-   3. Research Contribution (Choose one):
-       * Custom Dataset: Collect your own video dataset of a challenging environment for a robot (e.g., a
-         cluttered room, a hallway with changing light) and analyze NeRF's performance. How well does it capture
-          geometry? Does it handle reflections or transparent objects?
-       * Dynamic Scenes: NeRFs traditionally require static scenes. A great research challenge is to investigate
-          methods for adapting NeRFs to handle moving objects.
-       * Real-time Application: Explore how a pre-trained NeRF could be used by a robot for a simple task, like
-         collision avoidance or object localization.
-
-  To get started, I recommend you search for and read the original NeRF paper: "NeRF: Representing Scenes as
-  Neural Radiance Fields for View Synthesis" by Mildenhall et al. (2020). Also, check out the code for
-  Instant-NGP on GitHub.
+By fusing the robot's path with the locations of detected objects into a simple top-down 2D map (a "2.5D" representation), this project represents the most direct and feasible path to achieving the user's original vision in the scope of a bachelor thesis.

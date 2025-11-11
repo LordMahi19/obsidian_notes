@@ -8,37 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f4fb953cf7bca41d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "US admission/university/Alcorn_State_University.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Alcorn_State_University"
-            }
-          },
-          {
             "id": "d9cb855e088f0145",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3d environment/thesis.md",
-                "mode": "source",
+                "file": "3d environment/GEMINI.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -52,11 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "thesis"
+              "title": "GEMINI"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 233.5
   },
   "right": {
     "id": "d2d860f1cc2e3a73",
@@ -211,7 +186,15 @@
   },
   "active": "d9cb855e088f0145",
   "lastOpenFiles": [
+    "3d environment/plan.md",
     "3d environment/research_ideas.md",
+    "3d environment/thesis.md",
+    "3d environment/GEMINI.md",
+    "Excalidraw/Drawing 2025-11-10 23.06.59.excalidraw.md",
+    "Excalidraw",
+    "US admission/university/desktop.ini",
+    "US admission/states/desktop.ini",
+    "US admission/desktop.ini",
     "US admission/university/University_of_Wisconsin_Stout.md",
     "US admission/states/wisconsin.md",
     "US admission/university/Indiana_University_Purdue_University_Indianapolis.md",
@@ -233,13 +216,8 @@
     "US admission/university/Missouri_State_University.md",
     "US admission/university/Loyola_University_Chicago.md",
     "US admission/university/Iowa_State_University.md",
-    "US admission/university/Indiana_University_Bloomington.md",
-    "US admission/university/Indiana_State_University.md",
-    "US admission/university/Governors_State_University.md",
-    "US admission/university/Fort_Hays_State_University.md",
     "US admission/states",
     "US admission/university",
-    "US admission/desktop.ini",
     "desktop.ini",
     "Learning Map/ml/learning map.canvas",
     "Learning Map/ml/karpathy.canvas",
@@ -247,9 +225,6 @@
     "US admission/visualisation.html",
     "US admission/visualisatio.html",
     "US admission/New Text Document.txt",
-    "US admission/Untitled.base",
-    "US admission",
-    "3d environment/desktop.ini",
     "thesis/thesis mind map.canvas",
     "Pasted image 20251105144531.png",
     "Pasted image 20251104054827.png",
