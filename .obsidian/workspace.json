@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3d environment/GEMINI.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "GEMINI"
+              "title": "README"
             }
           }
         ]
@@ -178,18 +178,20 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "audio-recorder:Start/stop recording": false,
       "publish:Publish changes...": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "d9cb855e088f0145",
   "lastOpenFiles": [
     "3d environment/plan.md",
-    "3d environment/research_ideas.md",
+    "README.md",
     "3d environment/thesis.md",
     "3d environment/GEMINI.md",
+    "3d environment/research_ideas.md",
+    "network structure.canvas",
     "Excalidraw/Drawing 2025-11-10 23.06.59.excalidraw.md",
     "Excalidraw",
     "US admission/university/desktop.ini",
@@ -215,13 +217,11 @@
     "US admission/university/Northeastern_Illinois_University.md",
     "US admission/university/Missouri_State_University.md",
     "US admission/university/Loyola_University_Chicago.md",
-    "US admission/university/Iowa_State_University.md",
     "US admission/states",
     "US admission/university",
     "desktop.ini",
     "Learning Map/ml/learning map.canvas",
     "Learning Map/ml/karpathy.canvas",
-    "network structure.canvas",
     "US admission/visualisation.html",
     "US admission/visualisatio.html",
     "US admission/New Text Document.txt",
