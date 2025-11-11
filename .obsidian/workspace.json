@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "3d environment/currently doing.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "currently doing"
             }
           }
         ]
@@ -187,8 +187,9 @@
   "active": "d9cb855e088f0145",
   "lastOpenFiles": [
     "3d environment/plan.md",
-    "README.md",
+    "3d environment/currently doing.md",
     "3d environment/thesis.md",
+    "README.md",
     "3d environment/GEMINI.md",
     "3d environment/research_ideas.md",
     "network structure.canvas",
@@ -216,7 +217,6 @@
     "US admission/university/Northern_Illinois_University.md",
     "US admission/university/Northeastern_Illinois_University.md",
     "US admission/university/Missouri_State_University.md",
-    "US admission/university/Loyola_University_Chicago.md",
     "US admission/states",
     "US admission/university",
     "desktop.ini",

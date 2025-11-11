@@ -10,6 +10,16 @@ This directory serves as the planning and documentation hub for a bachelor thesi
 *   `research_ideas.md`: A document that captures the evolution of the project idea to its final, clarified goal.
 *   `plan.md`: A step-by-step action plan for the software implementation of the system in Python.
 
+## Implementation Progress
+
+The implementation of the prototype has begun, following the plan outlined in `plan.md`.
+
+*   **Visual Odometry (VO):** The first module, responsible for tracking camera motion, is in development.
+    *   **Technology:** Implemented in Python using the OpenCV library.
+    *   **Functionality:** It detects and matches features between consecutive video frames to estimate the camera's rotation and translation.
+    *   **Location:** The code is being developed in a new `2_5D_Reconstruction` directory, specifically in `src/vo.py`.
+    *   **Status:** A basic implementation is complete and provides real-time trajectory visualization. The next step is to integrate object detection.
+
 ## Usage
 
 This directory is for managing the research and documentation aspects of the thesis.
