@@ -1,28 +1,23 @@
-# Gemini Project Context: Real-time 2.5D Mapping for Robotics
+# Gemini Project Context: Lightweight, Primitive-based 3D Scene Reconstruction for Robotics
 
 ## Directory Overview
 
-This directory serves as the planning and documentation hub for a bachelor thesis focused on **real-time robotic perception**. The project's goal is to build a prototype system that uses a single camera to create a simplified, live "2.5D" map of its environment. This map is not a photorealistic 3D model, but a geometric representation of the robot's path and the location of key objects, suitable for real-time navigation. The system will be built by combining two core computer vision techniques: **Visual Odometry** (to track motion) and **Object Detection** (to identify objects).
+This directory serves as the planning and documentation hub for a bachelor thesis focused on **lightweight, primitive-based 3D scene reconstruction for robotics**. The project's goal is to build a prototype system that uses a single camera to create a simplified, live 3D model of its environment, represented by geometric primitives (planes, cuboids). This model is intended for real-time navigation by robots, particularly those trained in 3D simulated environments.
 
 ## Key Files
 
-*   `thesis.md`: The formal thesis proposal, which details the plan to build the real-time 2.5D mapping system.
-*   `research_ideas.md`: A document that captures the evolution of the project idea to its final, clarified goal.
-*   `plan.md`: A step-by-step action plan for the software implementation of the system in Python.
+*   `thesis.md`: The formal thesis proposal, detailing the plan to build and evaluate the primitive-based 3D reconstruction system.
+*   `research_ideas.md`: A document that captures the evolution of the project idea, from initial concepts to the current goal of primitive-based 3D reconstruction.
+*   `new plan.md`: The current step-by-step action plan for the software implementation of the primitive-based 3D reconstruction system.
+*   `plan.md`: (Outdated) The previous action plan for the 2.5D mapping system.
 
 ## Implementation Progress
 
-The implementation of the prototype has begun, following the plan outlined in `plan.md`.
-
-*   **Visual Odometry (VO):** The first module, responsible for tracking camera motion, is in development.
-    *   **Technology:** Implemented in Python using the OpenCV library.
-    *   **Functionality:** It detects and matches features between consecutive video frames to estimate the camera's rotation and translation.
-    *   **Location:** The code is being developed in a new `2_5D_Reconstruction` directory, specifically in `src/vo.py`.
-    *   **Status:** A basic implementation is complete and provides real-time trajectory visualization. The next step is to integrate object detection.
+The project has pivoted from a 2.5D mapping approach to a lightweight, primitive-based 3D scene reconstruction. Implementation will now follow the plan outlined in `new plan.md`. Previous work on Visual Odometry and Object Detection will be adapted and integrated into the new pipeline, alongside new components such as monocular depth estimation, plane detection, and 3D cuboid fitting.
 
 ## Usage
 
 This directory is for managing the research and documentation aspects of the thesis.
 
 *   Refer to `thesis.md` for the formal structure and research questions.
-*   Use `plan.md` as a coding and implementation guide.
+*   Use `new plan.md` as the primary coding and implementation guide.

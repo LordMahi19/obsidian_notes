@@ -2,6 +2,6 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "newFileFolderPath": "Finnish Language/words",
-  "promptDelete": true,
+  "promptDelete": false,
   "showUnsupportedFiles": false
 }
