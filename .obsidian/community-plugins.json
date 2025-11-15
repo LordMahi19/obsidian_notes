@@ -1,5 +1,7 @@
 [
   "table-editor-obsidian",
   "dataview",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "canvas-mindmap",
+  "collapse-node"
 ]

@@ -3,5 +3,8 @@
   "newFileLocation": "current",
   "newFileFolderPath": "Finnish Language/words",
   "promptDelete": false,
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "showLineNumber": false,
+  "readableLineLength": false,
+  "attachmentFolderPath": "./"
 }
